@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rippleBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary"
+    app:rb_color="@android:color/white"
+    app:rb_radius="32dp"
+    app:rb_rippleAmount="6"
+    app:rb_duration="3000"
+    app:rb_scale="6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCheckin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@Check_in"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/tvScanning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@Scanning...."
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/textViewCheckin"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tvCheckinsucces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@Check-in succes"
+        android:background="@drawable/bg_checkin_succes"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="16sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingStart="68dp"
+        android:paddingEnd="68dp"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</com.skyfishjy.library.RippleBackground>
